@@ -37,13 +37,11 @@ body{
     height:50px;
 }
 .one > p, .social > a{
-    color:#f2deff;
+    color:#f9eeff;
 }
-.beauty{
-    transform: translateX(-50%);
-}
+
 .beauty2{
-    transform: translateX(50%);
+    transform: rotate(180deg)
 }
 .grid-container {
     width: 100%;
@@ -72,7 +70,7 @@ body{
     font-family: 'Sedgwick Ave Display', cursive;
     font-size:60px;
     letter-spacing: 0.1em;
-    color:#f2deff;
+    color:#f9eeff;
 }
 .box2{
     width:40%;
@@ -86,7 +84,7 @@ body{
     align-items: center;
 }
 .about{
-    color:#f2deff;
+    color:#f9eeff;
     width:60%;
     /* background-color: green; */
     font-size: 20px;
@@ -95,7 +93,7 @@ body{
    
 }
 .about a {
-    color:#f2deff;
+    color:#f9eeff;
     font-size: 16px;
 }
 .about a:hover, .social > a:hover {
@@ -106,7 +104,7 @@ body{
     text-align: center;
     /* background-color: violet; */
     width:40%;
-    color:#f2deff;
+    color:#f9eeff;
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 40px;
     
@@ -118,14 +116,14 @@ body{
     text-align: center;
     /* background-color: violet; */
     width:60%;
-    color:#f2deff;
+    color:#f9eeff;
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 40px;
    
     
 }
 .inspire{
-    color:#f2deff;
+    color:#f9eeff;
     width:40%;
     /* background-color: green; */
     font-size: 20px;
@@ -133,9 +131,7 @@ body{
     font-family: 'Old Standard TT', serif;
    
 }
-.imagebox2{
-    background-color: blue;
-}
+
 
 @media screen and (max-width:900px){
     .box, .three, .four{
@@ -169,11 +165,7 @@ body{
         letter-spacing: 0.07em;
     }
     .inspire{
-      
-     
         padding:20px 0px 20px 0px;
-        
-       
     }
     .box1 > h2{
       
@@ -188,7 +180,12 @@ body{
         font-size:40px;
         
     }
-    
+    .about{
+        padding:20px 20px 20px 5px;
+    }
+    .inspire{
+        padding:20px 0px 20px 5px;
+    }
     .three > h3 .four > h3{
         width:100%;
         font-size: 20px;
