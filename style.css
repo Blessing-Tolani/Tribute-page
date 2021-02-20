@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    outline:none !important;
+  }
+html, body {
+    height: 100%;
+}
+.one > p {
+    font-family:ABeeZee;
+}
+.pop{
+    margin-top:50px;
+}
+.social{
+   font-size: 19px;
+   margin-top:120px ;
+   text-align: center;
+}
+.social > a{
+    padding-left:10px;
+    padding-bottom: 20px;
+}
+
+body{
+    background-color:#191820;
+    overflow-x: hidden;
+}
+.one{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+}
+.one > p, .social > a{
+    color:#f2deff;
+}
+.beauty{
+    transform: translateX(-50%);
+}
+.beauty2{
+    transform: translateX(50%);
+}
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px  auto auto auto auto 50px;
+    height: 100%;
+  
+}
+
+.box{
+    display:flex;
+    width:100%;
+
+   
+}
+.box1{
+    width:60%;
+    /* background-color:green; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box1 > h2{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size:60px;
+    letter-spacing: 0.1em;
+    color:#f2deff;
+}
+.box2{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    
+}
+.three, .four{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about{
+    color:#f2deff;
+    width:60%;
+    /* background-color: green; */
+    font-size: 20px;
+    padding:20px 20px 20px 0px;
+    font-family: 'Old Standard TT', serif;
+   
+}
+.about a {
+    color:#f2deff;
+    font-size: 16px;
+}
+.about a:hover, .social > a:hover {
+    color:lightblue;
+   
+}
+.three > h3{
+    text-align: center;
+    /* background-color: violet; */
+    width:40%;
+    color:#f2deff;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+    
+}
+.four,.tho{
+    margin-top:70px;
+}
+.four > h3{
+    text-align: center;
+    /* background-color: violet; */
+    width:60%;
+    color:#f2deff;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+   
+    
+}
+.inspire{
+    color:#f2deff;
+    width:40%;
+    /* background-color: green; */
+    font-size: 20px;
+    padding:20px 0px 20px 40px;
+    font-family: 'Old Standard TT', serif;
+   
+}
+.imagebox2{
+    background-color: blue;
+}
+
+@media screen and (max-width:900px){
+    .box, .three, .four{
+        flex-direction: column;
+    }
+    .box1 > h2{
+     
+        font-size:50px;
+        
+    }
+    .box1,.box2{
+        width:100%;
+    }
+    .imagebox2{
+        width:100%;
+    }
+    .box1, .four > p {
+        order:2;
+    }
+    .box2, .four > h3{
+        order:1;
+    }
+    .three > h3 .four > h3{
+        width:100%;
+        font-size: 35px;
+        letter-spacing: 0.07em;
+    }
+    .about, .inspire{
+        width:80%;
+        font-size:18px;
+        letter-spacing: 0.07em;
+    }
+    .inspire{
+      
+     
+        padding:20px 0px 20px 0px;
+        
+       
+    }
+    .box1 > h2{
+      
+        font-size:50px;
+        
+    }
+    
+}
+@media screen and (max-width:600px){
+    .box1 > h2{
+      
+        font-size:40px;
+        
+    }
+    
+    .three > h3 .four > h3{
+        width:100%;
+        font-size: 20px;
+    }
+    .about, .inspire{
+        width:90%;
+        font-size:16px;
+        
+    }
+}
+@media screen and (max-width:410px){
+    .imagebox2{
+        width:100%;
+    }
+}
