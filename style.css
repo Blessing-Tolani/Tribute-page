@@ -39,9 +39,12 @@ body{
 .one > p, .social > a{
     color:#f9eeff;
 }
-
+.beauty{
+    transform: translateX(-50%);
+}
 .beauty2{
-    transform: rotate(180deg)
+    transform: translateX(50%);
+    overflow-x: hidden;
 }
 .grid-container {
     width: 100%;
@@ -154,9 +157,9 @@ body{
     .box2, .four > h3{
         order:1;
     }
-    .three > h3 .four > h3{
+    .three > h3, .four > h3{
         width:100%;
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 0.07em;
     }
     .about, .inspire{
@@ -186,10 +189,7 @@ body{
     .inspire{
         padding:20px 0px 20px 5px;
     }
-    .three > h3 .four > h3{
-        width:100%;
-        font-size: 20px;
-    }
+  
     .about, .inspire{
         width:90%;
         font-size:16px;
